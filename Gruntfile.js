@@ -24,5 +24,5 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-htmlhint');
   grunt.loadNpmTasks('grunt-eslint');
 
-    grunt.registerTask('default', ['htmlhint', 'csslint', 'eslint']);
-  }
+  grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
+  };
