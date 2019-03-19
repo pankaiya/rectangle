@@ -19,15 +19,15 @@ module.exports = function(grunt){
       },
       src:'*.html'
     },
-  mocha:{
-    test:{
-      src:['test/index.html'],
+    mocha:{
+      test:{
+        src:['test/index.html'],
     },
     options:{
       run:true,
-      reporter:'Spec'
+        reporter:'Spec'
+      }
     }
-  }
   });
 
   grunt.loadNpmTasks('grunt-contrib-csslint');
