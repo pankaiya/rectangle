@@ -8,10 +8,9 @@ $(function(){
     var w = Number($length.val()),
         h = Number($width.val());
 
-    var p = 2*(w+h),
-        a = w * h;
-    $perimeter.val(p);
-    $area.val(a);
+    var r = new Rectangle(w,h);
 
+    $perimeter.val(r.perimeter());
+    $area.val(r.area());
   });
 });
