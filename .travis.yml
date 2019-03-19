@@ -8,7 +8,7 @@ after_script:
     - git init
     - git config user.name "${USER_NAME}"
     - git config user.email "${USER_EMAIL}"
-    - cp ../index.html.
+    - cp ../index.html .
     - cp ../rectangle.* .
     - git add .
     - git commit -m "publish wet site"

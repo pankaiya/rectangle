@@ -7,18 +7,18 @@ module.exports = function(grunt){
       },
       target:['*.js']
     },
-  csslint:{
-    options:{
-      csslintrc:'.csslintrc'
+    csslint:{
+      options:{
+        csslintrc:'.csslintrc'
+      },
+      src:'*.css'
     },
-    src:'*.css'
-  },
-  htmlhint:{
-    options:{
-      htmlhintrc:'.htmlhintrc'
-    },
-    src:'*.html'
-  }
+    htmlhint:{
+      options:{
+        htmlhintrc:'.htmlhintrc'
+      },
+      src:'*.html'
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-csslint');
@@ -26,4 +26,4 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-eslint');
 
   grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
-  };
+};
