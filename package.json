@@ -12,6 +12,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
     "grunt-mocha": "^1.2.0"
   },
   "scripts": {
