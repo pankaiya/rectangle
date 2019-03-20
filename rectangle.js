@@ -3,7 +3,7 @@ $(function(){
   var $length = $('#length'),
       $width = $('#width'),
       $btnCal = $('#btncal'),
-      $perimeter=$('#perimeter'),
+      $perimeter = $('#perimeter'),
       $area=$('#area');
   $btnCal.click(function(){
     var w = Number($length.val()),
